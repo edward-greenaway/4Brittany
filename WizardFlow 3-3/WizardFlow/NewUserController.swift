@@ -53,7 +53,8 @@ class NewUserController: UIViewController, UIScrollViewDelegate {
         
         textUserNameField.becomeFirstResponder()
         
-        
+        scrollAvatars.contentSize = CGSizeMake(scrollAvatars.contentSize.width,0) // disable vertical scroll
+
         //        textUserNameField.setNeedsFocusUpdate() // how to pop the keyboard ???
         
     }
